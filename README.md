@@ -1,7 +1,7 @@
 
-# 🌟 Face Recognition Attendance System
+# 🌟 Face Recognition System
 
-This project is a Flutter-based face recognition attendance system that uses TensorFlow Lite (TFLite) for face embedding extraction and Supabase for user data storage and management. The application can register a user's face and verify it during attendance.
+This project is a Flutter-based face recognition system that uses TensorFlow Lite (TFLite) for face embedding extraction and Supabase for user data storage and management. The application can register a user's face and verify it during.
 
 ---
 
