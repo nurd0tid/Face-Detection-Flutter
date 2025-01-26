@@ -18,7 +18,39 @@ Before you begin, ensure you have the following installed:
 
 ---
 
-### **2. Project Setup**
+### **2. Choosing a FaceNet Model**
+
+This project supports two different FaceNet models for face embedding extraction. You can choose based on your requirements:
+
+#### **Option 1: Model from Shubham**
+- **Repository**: [shubham0204/FaceRecognition_With_FaceNet_Android](https://github.com/shubham0204/FaceRecognition_With_FaceNet_Android)
+- **Features**:
+  - Generates **128-dimensional embeddings**.
+  - Lightweight and suitable for faster computation.
+  - Recommended for smaller databases or applications requiring faster responses.
+- **Advantages**:
+  - Easier to store and manage embedding vectors in the database.
+  - Lower computational requirements.
+- **Limitations**:
+  - Slightly less accurate compared to models with higher embedding dimensions.
+
+#### **Option 2: Model from Pillar**
+- **Repository**: [pillarpond/face-recognizer-android](https://github.com/pillarpond/face-recognizer-android)
+- **Features**:
+  - Generates **512-dimensional embeddings**.
+  - More accurate in distinguishing between faces with high similarity.
+  - Recommended for systems requiring high precision (e.g., security systems).
+- **Advantages**:
+  - Better accuracy due to higher embedding dimensions.
+  - Suitable for applications requiring robust face recognition.
+- **Limitations**:
+  - Larger embedding vectors, requiring more storage and computational power.
+  - May take slightly longer for verification.
+
+---
+
+
+### **3. Project Setup**
 
 #### **📂 Clone Repository**
 
@@ -67,7 +99,7 @@ flutter:
 
 ---
 
-### **3. 🔑 Supabase Setup**
+### **4. 🔑 Supabase Setup**
 
 #### **Step 1: Create a New Project**
 
@@ -98,7 +130,7 @@ const String SUPABASE_KEY = '<your_supabase_key>'; // Your Supabase Anon Key
 
 ---
 
-### **4. 🚀 Run the Application**
+### **5. 🚀 Run the Application**
 
 1. Connect a physical device or emulator.
 2. Run the application:
