@@ -9,7 +9,7 @@ class MLService {
   /// Inisialisasi model TFLite
 Future<void> initializeModel() async {
     try {
-      _interpreter = await Interpreter.fromAsset('assets/models/facenet.tflite');
+      _interpreter = await Interpreter.fromAsset('assets/models/facenet1.tflite');
       print('Model berhasil diinisialisasi');
     } catch (e) {
       print('Error: $e');
